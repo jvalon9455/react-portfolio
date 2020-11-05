@@ -4,13 +4,18 @@ import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Navbar from "./components/Navbar/Navbar";
 import Button from "./components/Button/Button";
+import Header from "./components/Header/Header";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+        <Header />
         <Button />
+        <About />
+        
         {/* <div>
           <Link to="/">About</Link>
         </div>

@@ -1,0 +1,22 @@
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+}
+.page-heading {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 1px solid red;
+}
+.body-wrapper {
+  /* color: white;
+    background-color: #333; */
+  margin: auto;
+  border: 1px solid lime;
+  width: 90vw;
+}
+.body-wrapper p {
+    padding: 10px;
+  }
