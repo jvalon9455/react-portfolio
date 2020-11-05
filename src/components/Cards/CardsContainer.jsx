@@ -11,7 +11,7 @@ import Workday from "../images/Workday.png";
 const CardsContainer = () => {
     return (
         <div className="cards">
-            <h1>Check out my apps!</h1>
+            <h1>Portfolio</h1>
             <div className="cards-container">
                 <div className="cards-wrapper">
                     <ul className="cards-items">

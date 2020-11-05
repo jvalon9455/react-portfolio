@@ -6,7 +6,7 @@ import "./Cards.css";
 const Cards = (props) => {
   return (
     <li className="cards-item">
-      <div className="card">
+      <div className="whole-card">
         <img className="card-image" src={props.src} />
         <div className="card-text">{props.text}</div>
         <div className="card-btn">

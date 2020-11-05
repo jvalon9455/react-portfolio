@@ -1,0 +1,11 @@
+.page-wrapper {
+    min-height: calc(100vh - 80px - 121px);
+  }
+
+  #PortfolioPic {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.33);
+    border-radius: 50px;
+    margin: 30px;
+    float: leftt;
+    max-width: 350px;
+  }

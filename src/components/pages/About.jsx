@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PortfolioPic from "../images/PortfolioPic.png"
+import "./pages.css";
 
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
       
       <div className="body-wrapper">
         
-        <img src={PortfolioPic}></img>
+        <img id="PortfolioPic"src={PortfolioPic}></img>
        
         <p>
           My name is John Alonso, but I go by Jimmy. I am a full-time Athletic
