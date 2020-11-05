@@ -1,39 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button.jsx";
+import "./Navbar.css";
 
 const Navbar = () => {
-  return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link to="/">John "Jimmy" Alonso</Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+  const [navState, setNavState] = useState(false);
+  const [button, setButton] = useState(true);
+  const handleClick = () => setNavState(!navState);
+  const navMenu = () => setNavState(false);
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <Link to="/"> About </Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/portfolio"> Portfolio </Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/contact"> Contact </Link>
-            </li>
-          </ul>
+  const showBtn = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+  window.addEventListener("resize", showBtn);
+
+  return (
+    
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo">
+          John "Jimmy" Alonso
+        </Link>
+        <div className="coffee" onClick={handleClick}>
         </div>
-      </nav>
-      <div></div>
-    </div>
+        <ul className={navState ? "nav-menu active" : "nav-menu"}>
+          <li>
+            <Link to="/" className="nav-links" onClick={navMenu}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/portfolio" className="nav-links" onClick={navMenu}>
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="nav-links" onClick={navMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
   );
 };
 

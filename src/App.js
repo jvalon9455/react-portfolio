@@ -3,13 +3,15 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Navbar from "./components/Navbar/Navbar";
+import Button from "./components/Button/Button";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <div>
+        <Button />
+        {/* <div>
           <Link to="/">About</Link>
         </div>
         <div>
@@ -17,7 +19,7 @@ function App() {
         </div>
         <div>
           <Link to="/contact">Contact</Link>
-        </div>
+        </div> */}
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
