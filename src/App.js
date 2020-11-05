@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
