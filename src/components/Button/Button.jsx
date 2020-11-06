@@ -10,17 +10,15 @@ function Button({ children, type, onClick, buttonStyle, buttonSize }) {
     ? buttonStyle
     : styleOfButton[0];
 
-  const checkButtonSize = sizeOfButton.includes(buttonSize) ? buttonSize : sizeOfButton[0];
+  const checkButtonSize = sizeOfButton.includes(buttonSize)
+    ? buttonSize
+    : sizeOfButton[0];
 
-//   test browser route
+  //   test browser route
   return (
-    <div>
-      {/* <Link to="expresso" className="btn-mobile">
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}>
-          {children}
-        </button>
-      </Link> */}
-    </div>
+    <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}>
+      {children}
+    </button>
   );
 }
 

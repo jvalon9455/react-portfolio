@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.css";
 import Resume from "../images/Resume.pdf";
 
 const Contact = () => {

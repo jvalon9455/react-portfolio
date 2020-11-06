@@ -5,7 +5,7 @@ import "./Cards.css";
 
 const Cards = (props) => {
   return (
-    <li className="cards-item">
+    <li className="cards-item-li">
       <div className="whole-card">
         <img className="card-image" src={props.src} />
         <div className="card-text">{props.text}</div>
@@ -14,7 +14,7 @@ const Cards = (props) => {
             <Button>Deployed App</Button>
           </a>
           <a href={props.github}>
-            <Button buttonStyle="btn--outline">Github Repo</Button>
+            <Button buttonStyle="btn-primary">Github Repo</Button>
           </a>
         </div>
       </div>
