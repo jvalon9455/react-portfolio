@@ -1,15 +1,17 @@
-import React from 'react';
-import CardsContainer from "../Cards/CardsContainer"
+import React from "react";
 
-const Portfolio = () => {
-    return (
-        <div>
-            <CardsContainer />
-            <div class="card fixed-bottom mt-5">
-            <div class="card-header text-center">
-                <span>&copy;2020 Copyright John Alonso</span>
-                <br/>
-                <a
+const Footer = () => {
+  return (
+    <div className="footer-container">
+      {/* <section class="social-media">
+        <div class="social-media-wrap">
+          <div class="website-rights">John Alonso © 2020</div>
+          <div id="phone" class="website-rights">
+            <i class="fa fa-phone social-icon-link phone" />
+            &nbsp;&nbsp;&nbsp;478-442-2581 
+          </div>
+          <div class="social-icons">
+            <a
               class="social-icon-link email"
               href="mailto:jvalon9455@gmail.com"
               target="_blank"
@@ -17,12 +19,9 @@ const Portfolio = () => {
             >
               <i class="fas fa-envelope"></i>
             </a>
-            <a
+            <a>
               class="social-icon-link github"
-              href="https://github.com/jvalon9455"
-              target="_blank"
-              aria-label="GitHub"
-            >
+              href="https://github.com/jvalon9455
               <i class="fab fa-github" />
             </a>
             <a
@@ -33,11 +32,11 @@ const Portfolio = () => {
             >
               <i class="fab fa-linkedin" />
             </a>
-            </div>
           </div>
         </div>
-        
-    );
+      </section> */}
+    </div>
+  );
 };
 
-export default Portfolio;
+export default Footer;

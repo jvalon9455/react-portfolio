@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          John "Jimmy" Alonso
+          John Alonso
         </Link>
         <div className="coffee" onClick={handleClick}>
         </div>

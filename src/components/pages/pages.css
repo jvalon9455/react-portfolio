@@ -9,3 +9,12 @@
     float: leftt;
     max-width: 350px;
   }
+
+  .body-wrapper {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .card-fixed-bottom {
+    background-color: black;
+  }
